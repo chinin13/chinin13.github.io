@@ -5,11 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>11234034 陳昀</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* 新增按鈕樣式 */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .scroll-to-top img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
     <div class="wrap">
         <div class="title">
-            <div class="title-image"><img src="image/title.png"</div>
+            <div class="title-image"><img src="image/title.png"></div>
         </div>
         <!-- <h2>My Pet</h2> -->
         <main>
@@ -27,11 +44,25 @@
                 <div class="card-image"><img src="image/Frame e.jpg"></div>
             </div>
         </section>
-        <container>
+        <footer> 
             <div class="shape">
-                <div class="shape-image"><img src="image/Group 1.png"</div>
+                <!-- 將 Group 1.png 變成按鈕 -->
+                <div class="shape-image">
+                    <button class="scroll-to-top" onclick="scrollToTop()">
+                        <img src="image/Group 1.png" alt="Scroll to Top">
+                    </button>
+                </div>
             </div>
-        </container>
+        </footer>
     </div>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // 平滑滾動
+            });
+        }
+    </script>
 </body>
 </html>
