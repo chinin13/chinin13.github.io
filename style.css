@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+h2{
+    margin: 0;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.wrap{
+    width: 980px;
+    /* height: 2500px; */
+    margin: 0 auto;/*區塊置中*/
+    padding: 40px 10px 200px 10px;
+    background-color: #efe5dc;
+}
+main{
+    color: #b67e62;
+    width: 960px;
+    height: 600px;
+    background-image: url(image/Frame\ 8.jpg);
+}
+/* .main-title{
+    font-size: 64px;
+} */
+section{
+    gap: 28px;/*間隔距離*/
+}
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 50px;
+}
+.shape{
+    width: 80px;
+    height: 80px;
+    /* padding: 2362px 58px 450px 58px; */
+    margin: 0 auto;
+}
+.card{
+    padding: 16px;
+    /* color: #6F592A; */
+    width: 940px;
+    height: 460px;
+}
+/* .title{
+    padding: 26px 686px 26px 19px;
+} */
